@@ -1,13 +1,13 @@
 <?php
 
 
-class file_manager{
+class users_manager{
     private $path;
     private $pdo;
     private function create_database() {
         try {
-            $pdo = new PDO('sqlite:' . $this->path);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->pdo = new PDO('sqlite:' . $this->path);
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
             // Создание таблицы пользователей
             $sql = "CREATE TABLE users (
@@ -16,7 +16,7 @@ class file_manager{
                 password TEXT NOT NULL
             )";
             
-            $pdo->exec($sql);
+            $this->pdo->exec($sql);
             echo "База данных создана успешно";
             
         } catch(PDOException $e) {
@@ -42,8 +42,8 @@ class file_manager{
     
     function set_to_file($login, $password){
         try{
-            $stmp = $this->pdo->prepare("INSER INTO users(login, password) VALUES(?, ?)");
-            return $stmp->excecute([$login, $password]);
+            $stmp = $this->pdo->prepare("INSERT INTO users(login, password) VALUES(?, ?)");
+            return $stmp->execute([$login, $password]);
         } catch(PDOException $ex){
             echo "Exception: " . $ex->getMessage();
             return false;
@@ -62,15 +62,36 @@ class file_manager{
     }
 
     function get_user_by_login_password($login, $password){
+        if($this->is_empty()){
+            return false;
+        }
         try{
             $stmp = $this->pdo->prepare("SELECT * FROM users WHERE login = ? AND password = ?");
             $stmp->execute([$login, $password]);
-            return $stmp->featch(PDO::FETCH_ASSOC);
+            return $stmp->fetchAll(PDO::FETCH_ASSOC);
         } catch(PDOException $ex){
             echo "Exception" . $ex->getMessage();
             return false;
         }
     }
 
+
+
+    function is_empty(){
+        try{
+            $stmp = $this->pdo->query("SELECT * FROM users");
+            $count = $stmp->fetchColumn();
+            if($count >0){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        catch(PDOException $ex){
+            echo "". $ex->getMessage();
+            return false;
+        }
+    }
 }
 ?>
