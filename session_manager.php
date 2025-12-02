@@ -29,7 +29,6 @@ class session_manager{
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 session_id TEXT NOT NULL UNIQUE,
                 user_id INTEGER NOT NULL,
-                created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
                 expires_at DATETIME NOT NULL
             )";
             
@@ -39,8 +38,9 @@ class session_manager{
         }
     }
 
-    public function create_session($user_id, $expires_at) {
+    public function create_session($user_id) {
         try {
+            $expires_at = time() + 3600;
             $session_id = session_create_id();
             $stmt = $this->pdo->prepare("INSERT INTO sessions (session_id, user_id, expires_at) VALUES (?, ?, ?)");
             return $stmt->execute([$session_id, $user_id, $expires_at]);
@@ -52,9 +52,11 @@ class session_manager{
 
     public function validate_session($session_id) {
         try {
-            $stmt = $this->pdo->prepare("SELECT user_id FROM sessions WHERE session_id = ? AND expires_at > CURRENT_TIMESTAMP");
-            $stmt->execute([$session_id]);
-            return $stmt->fetch(PDO::FETCH_ASSOC);
+            $stmt = $this->pdo->prepare("SELECT user_id FROM sessions WHERE session_id = ? AND excires_at > ? VALUES(?,?)");
+            $stmt->execute([$session_id, time()]);
+            $stmp = $this->pdo->prepare("UPDATE SET excires_at = ? WHERE session_id = ? VALUES(?,?)");
+            $stmp->execute([time(), $session_id]);
+            return true;
         } catch(PDOException $e) {
             echo "Ошибка проверки сессии: " . $e->getMessage();
             return false;

@@ -8,3 +8,102 @@
 [Tue Nov 18 14:26:47.091921 2025] [php:error] [pid 11416:tid 1112] [client ::1:62568] PHP Fatal error:  Uncaught Error: Call to a member function querry() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('123', '123')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/
 [Tue Nov 18 14:27:41.448409 2025] [php:error] [pid 11416:tid 1116] [client ::1:62578] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('123', '123')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/
 [Tue Nov 18 14:29:13.064569 2025] [php:error] [pid 11416:tid 1112] [client ::1:62631] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('123', '123')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/
+[Tue Dec 02 12:50:10.391945 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 12:50:10.391945 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 12:50:10.391945 2025] [core:notice] [pid 1992:tid 412] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 12:50:10.394785 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00418: Parent: Created child process 15312
+[Tue Dec 02 12:50:10.921786 2025] [mpm_winnt:notice] [pid 15312:tid 448] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 12:52:15.151073 2025] [php:error] [pid 15312:tid 1112] [client ::1:61922] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('123', '123')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/index.html
+[Tue Dec 02 12:53:38.459980 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 02 12:53:38.518530 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 12:53:38.518530 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 12:53:38.519528 2025] [core:notice] [pid 1992:tid 412] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 12:53:38.521504 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00418: Parent: Created child process 2580
+[Tue Dec 02 12:53:39.473695 2025] [mpm_winnt:notice] [pid 2580:tid 420] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 12:53:40.488437 2025] [mpm_winnt:notice] [pid 15312:tid 448] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 12:53:42.050213 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 02 12:53:44.078236 2025] [mpm_winnt:notice] [pid 2580:tid 420] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 12:53:44.098887 2025] [mpm_winnt:notice] [pid 1992:tid 412] AH00430: Parent: Child process 2580 exited successfully.
+[Tue Dec 02 12:53:47.357505 2025] [mpm_winnt:notice] [pid 15816:tid 416] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 12:53:47.357505 2025] [mpm_winnt:notice] [pid 15816:tid 416] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 12:53:47.357505 2025] [core:notice] [pid 15816:tid 416] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 12:53:47.360634 2025] [mpm_winnt:notice] [pid 15816:tid 416] AH00418: Parent: Created child process 472
+[Tue Dec 02 12:53:47.841659 2025] [mpm_winnt:notice] [pid 472:tid 428] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 12:53:53.109667 2025] [php:error] [pid 472:tid 1116] [client ::1:61956] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('123', '123')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/index.html
+[Tue Dec 02 12:53:57.542259 2025] [php:error] [pid 472:tid 1116] [client ::1:61956] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('123', '123')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/index.html
+[Tue Dec 02 13:10:57.322568 2025] [mpm_winnt:notice] [pid 15816:tid 416] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 02 13:10:59.332765 2025] [mpm_winnt:notice] [pid 472:tid 428] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 13:10:59.352309 2025] [mpm_winnt:notice] [pid 15816:tid 416] AH00430: Parent: Child process 472 exited successfully.
+[Tue Dec 02 13:11:07.882388 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 13:11:07.883388 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 13:11:07.883388 2025] [core:notice] [pid 15828:tid 404] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 13:11:07.886388 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00418: Parent: Created child process 8620
+[Tue Dec 02 13:11:08.302422 2025] [mpm_winnt:notice] [pid 8620:tid 428] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 13:11:13.724869 2025] [php:error] [pid 8620:tid 1128] [client ::1:62368] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('123', '123')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/index.html
+[Tue Dec 02 13:11:57.514859 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 02 13:11:57.550931 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 13:11:57.550931 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 13:11:57.550931 2025] [core:notice] [pid 15828:tid 404] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 13:11:57.552913 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00418: Parent: Created child process 7324
+[Tue Dec 02 13:11:58.522495 2025] [mpm_winnt:notice] [pid 7324:tid 420] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 13:12:05.481829 2025] [php:error] [pid 8620:tid 1112] [client ::1:62369] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('123', '123')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/index.html
+[Tue Dec 02 13:12:05.557809 2025] [mpm_winnt:notice] [pid 8620:tid 428] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 13:27:49.192894 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 02 13:27:49.351119 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 13:27:49.351119 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 13:27:49.351119 2025] [core:notice] [pid 15828:tid 404] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 13:27:49.353151 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00418: Parent: Created child process 16080
+[Tue Dec 02 13:27:50.200018 2025] [mpm_winnt:notice] [pid 16080:tid 420] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 13:27:51.203093 2025] [mpm_winnt:notice] [pid 7324:tid 420] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 13:27:58.060482 2025] [php:error] [pid 16080:tid 1116] [client ::1:62617] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('1234', '1234')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/index.html
+[Tue Dec 02 13:28:04.480127 2025] [php:error] [pid 16080:tid 1104] [client ::1:62618] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('1234', '1234')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/index.html
+[Tue Dec 02 13:29:14.822162 2025] [php:error] [pid 16080:tid 1116] [client ::1:62657] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:82\nStack trace:\n#0 E:\\localhost\\account_manager.php(65): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('1234', '1234')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 82, referer: http://localhost/index.html
+[Tue Dec 02 13:32:08.592801 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 02 13:32:08.634406 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 13:32:08.634406 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 13:32:08.634406 2025] [core:notice] [pid 15828:tid 404] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 13:32:08.636408 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00418: Parent: Created child process 16120
+[Tue Dec 02 13:32:09.606120 2025] [mpm_winnt:notice] [pid 16120:tid 452] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 13:32:10.621411 2025] [mpm_winnt:notice] [pid 16080:tid 420] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 13:32:16.905210 2025] [php:error] [pid 16120:tid 1148] [client ::1:62741] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:83\nStack trace:\n#0 E:\\localhost\\account_manager.php(66): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('1234', '1234')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 83, referer: http://localhost/index.html
+[Tue Dec 02 13:35:44.767698 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 02 13:35:46.769428 2025] [mpm_winnt:notice] [pid 16120:tid 452] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 13:35:46.790108 2025] [mpm_winnt:notice] [pid 15828:tid 404] AH00430: Parent: Child process 16120 exited successfully.
+[Tue Dec 02 13:35:53.856482 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 13:35:53.856482 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 13:35:53.856482 2025] [core:notice] [pid 9596:tid 420] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 13:35:53.860451 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00418: Parent: Created child process 14140
+[Tue Dec 02 13:35:54.402339 2025] [mpm_winnt:notice] [pid 14140:tid 424] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 13:35:58.831241 2025] [php:error] [pid 14140:tid 1116] [client ::1:62840] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:83\nStack trace:\n#0 E:\\localhost\\account_manager.php(66): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('1234', '1234')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 83, referer: http://localhost/index.html
+[Tue Dec 02 13:36:56.641494 2025] [php:error] [pid 14140:tid 1108] [client ::1:62842] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function users_manager::create_database(), 0 passed in E:\\localhost\\account_manager.php on line 31 and exactly 1 expected in E:\\localhost\\account_manager.php:7\nStack trace:\n#0 E:\\localhost\\account_manager.php(31): users_manager->create_database()\n#1 E:\\localhost\\display.php(9): users_manager->__construct('database.db')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 7, referer: http://localhost/index.html
+[Tue Dec 02 13:38:01.850923 2025] [php:error] [pid 14140:tid 1116] [client ::1:62873] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in E:\\localhost\\account_manager.php:83\nStack trace:\n#0 E:\\localhost\\account_manager.php(66): users_manager->is_empty()\n#1 E:\\localhost\\display.php(11): users_manager->get_user_by_login_password('1234', '1234')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 83, referer: http://localhost/index.html
+[Tue Dec 02 13:47:43.152745 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 02 13:47:44.335529 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 13:47:44.335529 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 13:47:44.335529 2025] [core:notice] [pid 9596:tid 420] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 13:47:44.375500 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00418: Parent: Created child process 9860
+[Tue Dec 02 13:47:44.948737 2025] [mpm_winnt:notice] [pid 9860:tid 432] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 13:47:45.171818 2025] [mpm_winnt:notice] [pid 14140:tid 424] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 13:47:51.715685 2025] [php:error] [pid 9860:tid 1144] [client ::1:63107] PHP Fatal error:  Uncaught Error: Undefined constant "this" in E:\\localhost\\account_manager.php:33\nStack trace:\n#0 E:\\localhost\\display.php(9): users_manager->__construct('database.db')\n#1 {main}\n  thrown in E:\\localhost\\account_manager.php on line 33, referer: http://localhost/index.html
+[Tue Dec 02 13:48:40.311688 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 02 13:48:40.397544 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 13:48:40.397544 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 13:48:40.397544 2025] [core:notice] [pid 9596:tid 420] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 13:48:40.399543 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00418: Parent: Created child process 4068
+[Tue Dec 02 13:48:41.313113 2025] [mpm_winnt:notice] [pid 4068:tid 452] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 13:48:51.198696 2025] [php:error] [pid 9860:tid 1124] [client ::1:63112] PHP Fatal error:  Uncaught PDOException: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name in E:\\localhost\\account_manager.php:33\nStack trace:\n#0 E:\\localhost\\account_manager.php(33): PDO->__construct('sqlitedatabase....')\n#1 E:\\localhost\\display.php(9): users_manager->__construct('database.db')\n#2 {main}\n  thrown in E:\\localhost\\account_manager.php on line 33, referer: http://localhost/index.html
+[Tue Dec 02 13:48:51.284753 2025] [mpm_winnt:notice] [pid 9860:tid 432] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 13:51:15.175562 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 02 13:51:15.230458 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 13:51:15.230458 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 13:51:15.230458 2025] [core:notice] [pid 9596:tid 420] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 13:51:15.231457 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00418: Parent: Created child process 1312
+[Tue Dec 02 13:51:16.179101 2025] [mpm_winnt:notice] [pid 1312:tid 420] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 13:51:17.193056 2025] [mpm_winnt:notice] [pid 4068:tid 452] AH00364: Child: All worker threads have exited.
+[Tue Dec 02 14:39:51.317295 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 02 14:39:51.358981 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 02 14:39:51.358981 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 02 14:39:51.358981 2025] [core:notice] [pid 9596:tid 420] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 02 14:39:51.360933 2025] [mpm_winnt:notice] [pid 9596:tid 420] AH00418: Parent: Created child process 9280
+[Tue Dec 02 14:39:52.328550 2025] [mpm_winnt:notice] [pid 9280:tid 436] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 02 14:39:53.339864 2025] [mpm_winnt:notice] [pid 1312:tid 420] AH00364: Child: All worker threads have exited.

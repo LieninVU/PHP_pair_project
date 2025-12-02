@@ -6,6 +6,7 @@ class users_manager{
     private $pdo;
     private function create_database() {
         try {
+            
             $this->pdo = new PDO('sqlite:' . $this->path);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
@@ -29,6 +30,8 @@ class users_manager{
         if (!file_exists($this->path)){
             $this->create_database();
         }
+        $this->pdo = new PDO('sqlite:' . $this->path);
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     function is_file_exist($path): bool{
         if(file_exists($path)){
@@ -54,7 +57,7 @@ class users_manager{
         try{
             $stmp = $this->pdo->prepare("SELECT * FROM users");
             $stmp->execute();
-            return $stmp->featchAll(PDO::FETCH_ASSOC);
+            return $stmp->fetchAll(PDO::FETCH_ASSOC);
         } catch(PDOException $ex){
             echo "Exception" . $ex->getMessage();
             return false;
@@ -90,7 +93,7 @@ class users_manager{
         }
         catch(PDOException $ex){
             echo "". $ex->getMessage();
-            return false;
+            return true;
         }
     }
 }
