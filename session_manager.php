@@ -3,8 +3,8 @@ class session_manager{
     private $path;
     private $pdo;
 
-    function __construct($path){
-        $this->path = $path;
+    function __construct(){
+        $this->path = 'session.db';
         if (!file_exists($this->path)){
             $this->create_database();
         }
@@ -15,6 +15,10 @@ class session_manager{
         try {
             $this->pdo = new PDO('sqlite:' . $this->path);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $result = $this->pdo->query("SELECT name FROM sqlite_master WHERE type='table' LIMIT 1");
+            if($result && $result->fetch(PDO::FETCH_ASSOC) !== false){
+                $this->create_database();
+            }
         } catch(PDOException $e) {
             echo "Ошибка подключения: " . $e->getMessage();
         }
@@ -25,7 +29,7 @@ class session_manager{
             $pdo = new PDO('sqlite:' . $this->path);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
-            $sql = "CREATE TABLE sessions (
+            $sql = "CREATE TABLE IF NOT EXISTS sessions (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 session_id TEXT NOT NULL UNIQUE,
                 user_id INTEGER NOT NULL,
@@ -52,11 +56,14 @@ class session_manager{
 
     public function validate_session($session_id) {
         try {
-            $stmt = $this->pdo->prepare("SELECT user_id FROM sessions WHERE session_id = ? AND excires_at > ? VALUES(?,?)");
+            $stmt = $this->pdo->prepare("SELECT user_id FROM sessions WHERE session_id = ? AND excires_at > ?");
             $stmt->execute([$session_id, time()]);
-            $stmp = $this->pdo->prepare("UPDATE SET excires_at = ? WHERE session_id = ? VALUES(?,?)");
-            $stmp->execute([time(), $session_id]);
-            return true;
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            if($result){
+                $stmp = $this->pdo->prepare("UPDATE SET excires_at = ? WHERE session_id = ?");
+                $stmp->execute([time(), $session_id]);
+                return true;
+            }
         } catch(PDOException $e) {
             echo "Ошибка проверки сессии: " . $e->getMessage();
             return false;

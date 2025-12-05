@@ -11,7 +11,7 @@ class users_manager{
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
             // Создание таблицы пользователей
-            $sql = "CREATE TABLE users (
+            $sql = "CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 login TEXT NOT NULL UNIQUE,
                 password TEXT NOT NULL
@@ -27,11 +27,19 @@ class users_manager{
 
     function __construct($path){
         $this->path = $path;
-        if (!file_exists($this->path)){
-            $this->create_database();
-        }
+        $db_is_new = !file_exists($this->path);
         $this->pdo = new PDO('sqlite:' . $this->path);
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        if ($db_is_new) {
+            $this->create_database();
+        } else {
+            // дополнительная проверка — если таблицы "users" нет, создаём
+            $res = $this->pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='users'");
+            if(!$res->fetch()) {
+                $this->create_database();
+            }
+        }
     }
     function is_file_exist($path): bool{
         if(file_exists($path)){
@@ -43,7 +51,7 @@ class users_manager{
     }
 
     
-    function set_to_file($login, $password){
+    function add_user($login, $password){
         try{
             $stmp = $this->pdo->prepare("INSERT INTO users(login, password) VALUES(?, ?)");
             return $stmp->execute([$login, $password]);
@@ -53,7 +61,7 @@ class users_manager{
         }
         
     }
-    private function get_to_file(){
+    private function get_user(){
         try{
             $stmp = $this->pdo->prepare("SELECT * FROM users");
             $stmp->execute();

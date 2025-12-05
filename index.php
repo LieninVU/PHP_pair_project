@@ -1,14 +1,18 @@
 <?php
-$path = 'session.db';
+require 'session_manager.php';
 session_start();
-$session_manager = new session_manager($path);
+// var_dump($_SESSION);
+// die();
+$session_manager = new session_manager();
 try{
     if($session_manager->validate_session(session_id())){
-
+        
     }
     else{
-        header('location: display.php');
+        header('location: index.html');
     }
+} catch(Exception $ex){
+    echo 'Exception: ' . $ex->getMessage();
 }
 phpinfo();
 ?>
