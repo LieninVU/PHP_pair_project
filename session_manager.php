@@ -56,11 +56,11 @@ class session_manager{
 
     public function validate_session($session_id) {
         try {
-            $stmt = $this->pdo->prepare("SELECT user_id FROM sessions WHERE session_id = ? AND excires_at > ?");
+            $stmt = $this->pdo->prepare("SELECT user_id FROM sessions WHERE session_id = ? AND expires_at > ?");
             $stmt->execute([$session_id, time()]);
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
             if($result){
-                $stmp = $this->pdo->prepare("UPDATE SET excires_at = ? WHERE session_id = ?");
+                $stmp = $this->pdo->prepare("UPDATE sessions SET excires_at = ? WHERE session_id = ?");
                 $stmp->execute([time(), $session_id]);
                 return true;
             }
