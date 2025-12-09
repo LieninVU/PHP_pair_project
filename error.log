@@ -635,3 +635,105 @@
 [Mon Dec 08 13:00:40.298878 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00418: Parent: Created child process 15292
 [Mon Dec 08 13:00:41.251733 2025] [mpm_winnt:notice] [pid 15292:tid 432] AH00354: Child: Starting 64 worker threads.
 [Mon Dec 08 13:00:42.252614 2025] [mpm_winnt:notice] [pid 7888:tid 420] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 10:40:55.362590 2025] [php:warn] [pid 15292:tid 1148] [client ::1:59458] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 10:40:55.362590 2025] [php:warn] [pid 15292:tid 1148] [client ::1:59458] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 10:49:35.496938 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 10:49:36.349653 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 10:49:36.349653 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 10:49:36.349653 2025] [core:notice] [pid 4844:tid 428] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 10:49:36.380875 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00418: Parent: Created child process 14020
+[Tue Dec 09 10:49:36.953173 2025] [mpm_winnt:notice] [pid 14020:tid 420] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 10:49:37.522436 2025] [mpm_winnt:notice] [pid 15292:tid 432] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 10:49:44.478790 2025] [php:warn] [pid 14020:tid 1112] [client ::1:59776] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 10:49:44.478790 2025] [php:warn] [pid 14020:tid 1112] [client ::1:59776] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 10:49:48.240341 2025] [php:warn] [pid 14020:tid 1116] [client ::1:59777] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 10:49:48.240341 2025] [php:warn] [pid 14020:tid 1116] [client ::1:59777] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 10:53:58.365534 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 10:53:58.397065 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 10:53:58.397065 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 10:53:58.397065 2025] [core:notice] [pid 4844:tid 428] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 10:53:58.412440 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00418: Parent: Created child process 15712
+[Tue Dec 09 10:53:59.381436 2025] [mpm_winnt:notice] [pid 15712:tid 424] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 10:54:00.393791 2025] [mpm_winnt:notice] [pid 14020:tid 420] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 10:54:31.721618 2025] [php:warn] [pid 15712:tid 1148] [client ::1:59848] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 10:54:31.721618 2025] [php:warn] [pid 15712:tid 1148] [client ::1:59848] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 10:54:34.737902 2025] [php:warn] [pid 15712:tid 1144] [client ::1:59849] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 10:54:34.737902 2025] [php:warn] [pid 15712:tid 1144] [client ::1:59849] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:09.291586 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 11:11:09.338459 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 11:11:09.338459 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 11:11:09.338459 2025] [core:notice] [pid 4844:tid 428] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 11:11:09.338459 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00418: Parent: Created child process 9596
+[Tue Dec 09 11:11:10.307483 2025] [mpm_winnt:notice] [pid 9596:tid 456] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 11:11:11.311254 2025] [mpm_winnt:notice] [pid 15712:tid 424] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 11:11:18.263641 2025] [php:warn] [pid 9596:tid 1148] [client ::1:60101] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:18.263641 2025] [php:warn] [pid 9596:tid 1148] [client ::1:60101] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:26.711029 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:26.711029 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:27.869733 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:27.869733 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:28.398370 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:28.398370 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:28.597636 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:28.597636 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:28.796598 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:28.796598 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.022648 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.022648 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.221790 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.221790 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.444913 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.444913 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.654326 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.654326 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.878902 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 24, referer: http://localhost/index.html
+[Tue Dec 09 11:11:29.878902 2025] [php:warn] [pid 9596:tid 1144] [client ::1:60102] PHP Warning:  Undefined array key "id" in E:\\localhost\\display.php on line 25, referer: http://localhost/index.html
+[Tue Dec 09 11:18:11.350584 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 11:18:11.382031 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 11:18:11.382031 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 11:18:11.382031 2025] [core:notice] [pid 4844:tid 428] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 11:18:11.397483 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00418: Parent: Created child process 10276
+[Tue Dec 09 11:18:12.360378 2025] [mpm_winnt:notice] [pid 10276:tid 420] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 11:18:13.366309 2025] [mpm_winnt:notice] [pid 9596:tid 456] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 11:27:49.000751 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 11:27:49.047632 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 11:27:49.047632 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 11:27:49.047632 2025] [core:notice] [pid 4844:tid 428] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 11:27:49.047632 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00418: Parent: Created child process 15420
+[Tue Dec 09 11:27:50.013306 2025] [mpm_winnt:notice] [pid 15420:tid 444] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 11:27:51.017302 2025] [mpm_winnt:notice] [pid 10276:tid 420] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 11:31:55.661602 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 11:31:55.706997 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 11:31:55.706997 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 11:31:55.706997 2025] [core:notice] [pid 4844:tid 428] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 11:31:55.706997 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00418: Parent: Created child process 13216
+[Tue Dec 09 11:31:56.678486 2025] [mpm_winnt:notice] [pid 13216:tid 420] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 11:31:57.684674 2025] [mpm_winnt:notice] [pid 15420:tid 444] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 11:32:20.509061 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Dec 09 11:32:50.515766 2025] [mpm_winnt:notice] [pid 4844:tid 428] AH00431: Parent: Forcing termination of child process 13216
+[Tue Dec 09 11:32:53.596463 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 11:32:53.596463 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 11:32:53.596463 2025] [core:notice] [pid 14228:tid 404] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 11:32:53.596463 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00418: Parent: Created child process 16020
+[Tue Dec 09 11:32:54.002733 2025] [mpm_winnt:notice] [pid 16020:tid 436] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 11:39:52.078395 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 11:39:52.134724 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 11:39:52.134724 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 11:39:52.134724 2025] [core:notice] [pid 14228:tid 404] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 11:39:52.137158 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00418: Parent: Created child process 11884
+[Tue Dec 09 11:39:53.087159 2025] [mpm_winnt:notice] [pid 11884:tid 464] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 11:39:54.100291 2025] [mpm_winnt:notice] [pid 16020:tid 436] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 11:40:08.529192 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 11:40:08.560700 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 11:40:08.560700 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 11:40:08.560700 2025] [core:notice] [pid 14228:tid 404] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 11:40:08.576113 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00418: Parent: Created child process 10564
+[Tue Dec 09 11:40:09.545096 2025] [mpm_winnt:notice] [pid 10564:tid 428] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 11:40:10.549850 2025] [mpm_winnt:notice] [pid 11884:tid 464] AH00364: Child: All worker threads have exited.
+[Tue Dec 09 11:41:26.670794 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00424: Parent: Received restart signal -- Restarting the server.
+[Tue Dec 09 11:41:26.717947 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00455: Apache/2.4.65 (Win64) PHP/8.4.14 configured -- resuming normal operations
+[Tue Dec 09 11:41:26.717947 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00456: Apache Lounge VS17 Server built: Jul 24 2025 14:32:29
+[Tue Dec 09 11:41:26.717947 2025] [core:notice] [pid 14228:tid 404] AH00094: Command line: 'E:\\Apache\\bin\\Apache24\\bin\\httpd.exe -d E:/Apache/bin/Apache24'
+[Tue Dec 09 11:41:26.717947 2025] [mpm_winnt:notice] [pid 14228:tid 404] AH00418: Parent: Created child process 14044
+[Tue Dec 09 11:41:27.687228 2025] [mpm_winnt:notice] [pid 14044:tid 420] AH00354: Child: Starting 64 worker threads.
+[Tue Dec 09 11:41:39.920349 2025] [mpm_winnt:notice] [pid 10564:tid 428] AH00364: Child: All worker threads have exited.

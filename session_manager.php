@@ -42,10 +42,10 @@ class session_manager{
         }
     }
 
-    public function create_session($user_id) {
+    public function add_session($user_id, $session_id) {
         try {
             $expires_at = time() + 3600;
-            $session_id = session_create_id();
+            // $session_id = session_create_id();
             $stmt = $this->pdo->prepare("INSERT INTO sessions (session_id, user_id, expires_at) VALUES (?, ?, ?)");
             return $stmt->execute([$session_id, $user_id, $expires_at]);
         } catch(PDOException $e) {
@@ -60,8 +60,8 @@ class session_manager{
             $stmt->execute([$session_id, time()]);
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
             if($result){
-                $stmp = $this->pdo->prepare("UPDATE sessions SET excires_at = ? WHERE session_id = ?");
-                $stmp->execute([time(), $session_id]);
+                $stmp = $this->pdo->prepare("UPDATE sessions SET expires_at = ? WHERE session_id = ?");
+                $stmp->execute([time()+3600, $session_id]);
                 return true;
             }
         } catch(PDOException $e) {

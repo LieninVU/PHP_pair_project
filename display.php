@@ -18,15 +18,18 @@ $login = $_POST['firstname'];
 $password = $_POST['lastname'];
 echo 'Your name: <b>'.$login . ' ' . $password . '</b>';
 
-if($manager->get_user_by_login_password($login, $password)) {
-    $session_manager->create_session($login);
-    // var_dump($_SESSION);
-    // die();
+$userArr = $manager->get_user_by_login_password($login, $password);
+if ($userArr && count($userArr) > 0) {
+    $user = $userArr[0];
+    $_SESSION['user_id'] = $user['id'];
+    $_SESSION['login'] = $user['login'];
+    $_SESSION['id'] = session_id();
+    $session_manager->add_session($user['id'], session_id());
     header('Location: index.php');
-
-}
-else {
+    exit();
+} else {
     $manager->add_user($login, $password);
     header('Location: regestration.html');
+    exit();
 }
 ?>
